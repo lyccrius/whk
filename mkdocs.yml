@@ -1,0 +1,73 @@
+# Project information
+site_name: WHK Wiki
+site_url: https://whk.lyccrius.site
+site_author: Lyccrius
+site_description: Lyccrius's WHK Wiki
+
+# Repository
+repo_name: 'lyccrius/whk'
+repo_url: 'https://github.com/lyccrius/whk'
+
+# Copyright
+copyright: 'Copyright &copy; 2023 - 2023 Lyccrius'
+
+# Configuration
+theme:
+  name: material
+  language: 'zh'
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+  favicon: 'favicon.png'
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.indexes
+  icon:
+    logo: 'material/school-outline'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+# Customization
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# Page tree
+nav:
+  - 首页:
+    - index.md
+  - 语文:
+    - yw/index.md
+  - 英语:
+    - yy/index.md
+  - 数学:
+    - sx/index.md
+  - 物理:
+    - wl/index.md
+  - 化学:
+    - hx/index.md
+  - 生物:
+    - sw/index.md
